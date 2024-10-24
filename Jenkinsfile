@@ -1,6 +1,5 @@
 pipeline {
-    agent { label 'agentwindows' }  
-    
+    agent any
     stages {
         stage('Check Version') {
             steps {
