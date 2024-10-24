@@ -1,9 +1,11 @@
 pipeline {
-    agent any
+    agent any  // This allows the job to run on any available agent
+
     stages {
-        stage('Check Version') {
+        stage('Check Node and npm Version') {
             steps {
-                bat "npm --version"    
+                bat "node --version"  // Check Node.js version
+                bat "npm --version"   // Check npm version
             }
         }
     }
