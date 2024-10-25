@@ -7,7 +7,7 @@
             
             stage('Install Dependencies') {
                 steps {
-                    sh '''
+                    bat '''
                         npm install
                     '''
                 }
@@ -18,7 +18,7 @@
             
             stage('Deploy') {
                 steps {
-                    sh '''
+                    bat '''
                        npm start
                         
                         echo "Application deployed at http://localhost:3000"
