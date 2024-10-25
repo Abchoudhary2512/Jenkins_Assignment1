@@ -1,7 +1,9 @@
 pipeline {
     agent any  // Use 'any' to run on any available agent
 
-    tools {nodejs "nodejs"}
+    tools {
+        NodeJS
+    }
 
 
     stages {
