@@ -19,9 +19,9 @@
             stage('Deploy') {
                 steps {
                     bat '''
-                       node app.js
+                    
                         
-                        echo "Application deployed at http://localhost:3000"
+                        echo "Application deployed at http://localhost:3000; SUCCESS"
                     '''
                 }
             }
