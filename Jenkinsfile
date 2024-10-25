@@ -1,6 +1,9 @@
 pipeline {
     agent any  // Use 'any' to run on any available agent
 
+    tools {nodejs "nodejs"}
+
+
     stages {
         stage('Check Node.js and npm Versions') {
             steps {
