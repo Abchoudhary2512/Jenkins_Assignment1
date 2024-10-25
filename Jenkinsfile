@@ -19,7 +19,7 @@
             stage('Deploy') {
                 steps {
                     bat '''
-                       npm start
+                       node app.js
                         
                         echo "Application deployed at http://localhost:3000"
                     '''
